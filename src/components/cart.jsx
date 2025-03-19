@@ -1,4 +1,5 @@
 import React from "react";
+const index = 1;
 
 const Cart = ({ cart }) => {
   return (
@@ -13,6 +14,13 @@ const Cart = ({ cart }) => {
               <img src={item.image} alt={item.name} />
               <h3>{item.name}</h3>
               <p>{item.price}</p>
+              <button
+                className="remove-btn"
+                onClick={() => removeFromCart(index)}
+              >
+                {" "}
+                Remove{" "}
+              </button>
             </div>
           ))}
         </div>

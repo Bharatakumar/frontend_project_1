@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 //import react from react
-import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [showModal, setShowModal] = useState(false); // State to control modal visibility
@@ -13,6 +12,9 @@ const Navigation = () => {
         <li href="#">menu</li>
         <li href="#">location</li>
         <li href="#">about</li>
+        <li>
+          <a href="/abt"></a>contact
+        </li>
       </ul>
       <button className="log" onClick={() => setShowModal(true)}>
         Login

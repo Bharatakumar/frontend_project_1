@@ -18,6 +18,7 @@ const Shop = ({ addToCart }) => {
   return (
     <div className="shop-container">
       <h1>Shop Your Favorite Shoes</h1>
+
       <div className="shoe-grid">
         {shoes.map((shoe) => (
           <div key={shoe.id} className="shoe-card">
